@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Filter of printes the char N ?.
+and filters states starting with upper case N.
 """
 
 import MySQLdb
