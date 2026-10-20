@@ -9,8 +9,9 @@ import sys
 
 if __name__ == "__main__":
     """
-    Connects to MySQL server on localhost at port 3306 using command line arguments
-    and prints all records from the states table.
+    Connects to MySQL server on localhost at port 3306
+    using command line arguments and prints all records
+    from the states table.
     """
     db = MySQLdb.connect(
         host="localhost",
