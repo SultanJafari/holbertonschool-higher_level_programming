@@ -1,18 +1,11 @@
 #!/usr/bin/python3
-"""
-Module that connects to a MySQL database and lists all states
-from the database hbtn_0e_0_usa sorted by id in ascending order.
-"""
+
 
 import MySQLdb
 import sys
 
 if __name__ == "__main__":
-    """
-    Connects to MySQL server on localhost at port 3306
-    using command line arguments and prints all records
-    from the states table.
-    """
+
     db = MySQLdb.connect(
         host="localhost",
         port=3306,
