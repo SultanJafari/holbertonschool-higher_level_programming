@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-
+Module that connects to a MySQL database and lists all cities
+of a specific state given as an argument, using a single execute.
 """
 
 import MySQLdb
@@ -9,7 +10,7 @@ import sys
 if __name__ == "__main__":
     """
     Connects to MySQL server on localhost at port 3306
-    and retrieves cities joined with their states.
+    and retrieves cities for a specific state securely.
     """
     db = MySQLdb.connect(
         host="localhost",
@@ -30,6 +31,6 @@ if __name__ == "__main__":
     )
     query_rows = cursor.fetchall()
     cities_list = [row[0] for row in query_rows]
-    print(",".join(cities_list))
+    print(", ".join(cities_list))
     cursor.close()
     db.close()
